@@ -1,0 +1,19 @@
+version: '2'
+services:
+  ipfs:
+    image: delon1192/ipfs-upload-media:latest
+    restart: always
+    ports:
+      - "4001:4001"
+      - "8080:8080"
+      - "5001:5001"
+    volumes:
+      - /opt/ipfs/export:/export
+      - /opt/ipfs/data/ipfs:/data/ipfs
+  nginx:
+    image: nginx
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - /opt/demo/html:/usr/share/nginx/html
