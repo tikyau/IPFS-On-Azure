@@ -26,4 +26,4 @@ docker-compose up -d as root user.
 ```
 
 4. Make sure these ports are open in firewall: 80, 4001, 5001, 8080
-5. In index.html file under html folder, change in line 15: Update the url accordigly.
+5. In index.html file under html folder, change in line 15: Update the url accordingly.
