@@ -22,7 +22,7 @@ pip install docker-compose
 ```
 3. Under /opt directory run:
 ```
-docker-compose up -d as root user.
+docker-compose up -d
 ```
 
 4. Make sure these ports are open in firewall: 80, 4001, 5001, 8080
