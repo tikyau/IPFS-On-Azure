@@ -12,7 +12,7 @@
     function upload() {
       const reader = new FileReader();
       reader.onloadend = function() {
-        const ipfs = window.IpfsApi('ipfs-upload.westus2.cloudapp.azure.com', 5001) // Connect to IPFS
+        const ipfs = window.IpfsApi('52.230.64.99', 5001) // Connect to IPFS
         const buf = buffer.Buffer(reader.result) // Convert data into buffer
         ipfs.files.add(buf, (err, result) => { // Upload buffer to IPFS
           if(err) {
